@@ -1,0 +1,4 @@
+"/Users/gaveen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/gaveen/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja /Users/gaveen/workflow/project_annuel_C
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/gaveen/workflow/project_annuel_C/cmake-build-debug
