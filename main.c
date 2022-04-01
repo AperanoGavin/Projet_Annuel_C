@@ -16,10 +16,30 @@ int main(int argc, char **argv)
     headers = curl_slist_append(headers, "X-RapidAPI-Key: 3ae49bd480msh5a2534d4142299ep1d1970jsn9bdcd8eb72ba");
     curl_easy_setopt(hnd, CURLOPT_HTTPHEADER, headers);
 
+    //CURLcode ret = curl_easy_perform(hnd);
+
+    //printf("CURLCODE := %s \n ",curl_easy_perform(hnd));
+
+    FILE *fptr;
+
+    // use appropriate location if you are using MacOS or Linux
+    fptr = fopen("ApiFetch.json","a+");
+
+    if(fptr == NULL)
+    {
+        printf("Error!");
+        exit(1);
+    }
+
     CURLcode ret = curl_easy_perform(hnd);
+    fprintf(fptr,"CURLCODE := %s \n ",curl_easy_perform(hnd));
+
+    fclose(fptr);
 
 
-    system ( 'gcc -o test -lcurl main.c && ./test >fetchApi.json' );
+
+
+    //system ( 'gcc -o test -lcurl main.c && ./test >fetchApi.json' );
 
     return 0;
 }
