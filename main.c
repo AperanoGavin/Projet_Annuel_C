@@ -25,6 +25,7 @@ int main(int argc, char **argv)
 
 
     FILE *fp = fopen("ApiFetch.json", "wb");
+    //FILE *fp = fopen("ApiFetch.xml", "wb");
     curl_easy_setopt(hnd, CURLOPT_WRITEDATA, fp);
     curl_easy_perform(hnd);
     fclose(fp);
