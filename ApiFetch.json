@@ -1,3 +1,1 @@
-CURLCODE := (null) 
- CURLCODE := (null) 
- 
+test({"coord":{"lon":-0.1257,"lat":51.5085},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"stations","main":{"temp":38.26,"feels_like":30.87,"temp_min":35.51,"temp_max":41.27,"pressure":1016,"humidity":72},"visibility":10000,"wind":{"speed":11.5,"deg":360},"clouds":{"all":16},"dt":1648800942,"sys":{"type":2,"id":268730,"country":"GB","sunrise":1648791362,"sunset":1648837948},"timezone":3600,"id":2643743,"name":"London","cod":200})
